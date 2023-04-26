@@ -14,19 +14,53 @@
 
 <body>
     <div class="container">
-        <nav>
-            <div class="principal-nav">
-                <img src="./img/bong.svg" alt="Logo bong home" class="logo-navbar">
-                <ul class="ul-navbar">
-                    <li>Inicio</li>
-                    <li>Iniciar Sesion</li>
-                    <li>Registrarse</li>
-                </ul>
+        <div class="info">
+            <div class="numero">
+                <AiOutlinePhone />+56912345678
             </div>
-            <div class="search-nav">
+            <div class="oferta">
+                Get 50% Off on selected items | Shop Now
+            </div>
+            <div class="localizacion">
+                <select name="idioma" id="idioma">
+                    <option value="default">Idioma</option>
+                    <option value="es">Es</option>
+                    <option value="en">En</option>
+                </select>
+                <select name="pais" id="pais">
+                    <option value="default">Pais</option>
+                    <option value="chile">Chile</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="peru">Peru</option>
+                    <option value="Colombia">Colombia</option>
+                </select>
+            </div>
+        </div>
 
-                <input type="text" placeholder="Bong rosado" class="input-navbar">
-                <img src="./img/search-icon.svg" alt="search icon" class="icon-search-nav">
+        <nav class='nav'>
+
+            <h2>
+                <FaBong /> TrippyBongs
+            </h2>
+            <select name="categorias" id="categorias">
+                <option value="default">Categorias</option>
+                <option value="bong">Bong</option>
+                <option value="banger">Banger</option>
+                <option value="bongsilicona">Bong de silicona</option>
+            </select>
+            <p>Deals</p>
+            <p>What's New</p>
+            <p>Delivery</p>
+            <div class="input">
+                <input type="text" name="search" id="search" placeholder='Search Product' />
+                <AiOutlineSearch />
+
+            </div>
+            <div class="account">
+                <RiAliensLine /> Cuenta
+            </div>
+            <div class="carrito">
+                <FiShoppingCart /> Carrito
             </div>
         </nav>
 
@@ -37,6 +71,16 @@
                 <input type="mail" required name='email' placeholder="Email">
                 <input type="password" required name="pass" id="pass" placeholder="Mypass">
                 <button type="submit">Iniciar Sesion</button>
+            </form>
+            <form class="form re">
+                <img src="./img/boong.svg" class="logobong">
+                <p class="titulo-iniciar-sesion">Crea tu cuenta</p>
+                <input type="name" required name='name' placeholder="Name">
+                <input type="phone" required name='phone' placeholder="phone">
+                <input type="adress" required name='adress' placeholder="Adress">
+                <input type="mail" required name='email' placeholder="Email">
+                <input type="password" required name="pass" id="pass" placeholder="Mypass">
+                <button type="submit">Crear cuenta</button>
             </form>
         </div>
 
