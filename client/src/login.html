@@ -72,16 +72,34 @@
                 <input type="password" required name="pass" id="pass" placeholder="Mypass">
                 <button type="submit">Iniciar Sesion</button>
             </form>
-            <form class="form re">
-                <img src="./img/boong.svg" class="logobong">
-                <p class="titulo-iniciar-sesion">Crea tu cuenta</p>
-                <input type="name" required name='name' placeholder="Name">
-                <input type="phone" required name='phone' placeholder="phone">
-                <input type="adress" required name='adress' placeholder="Adress">
-                <input type="mail" required name='email' placeholder="Email">
-                <input type="password" required name="pass" id="pass" placeholder="Mypass">
-                <button type="submit">Crear cuenta</button>
-            </form>
+            <title>Registro</title>
+</head>
+<body>
+    <section>
+        <h2>Registro</h2>
+        <form id="singupform">
+            <label>Nombre</label>
+            <input type="text" placeholder="..." id="name" required autofocus>
+            <label>Rut</label>
+            <input type="number" placeholder="..." id="rut">
+            <label>Mail</label>
+            <input type="email" placeholder="..." id="email" required>
+            <label>Direccion</label>
+            <input type="direccion" placeholder="..." id="direccion" required>
+            <label for="Metodos de pago">Elige un metodo de pago:</label>
+            <select name="Metodos de pago" id="Metodos de pago">
+                <option value="Transbank">Transbank</option>
+                <option value="Tranferencia">Transferencia</option>
+                <option value="Servipag">Servipag</option>
+            </select>
+            <label>Contraseña</label>
+            <input type="password" placeholder="..." id="password" required>
+            <input type="submit" value="Registro">
+            
+           
+        </form>
+    </section>
+    
         </div>
 
     </div>
